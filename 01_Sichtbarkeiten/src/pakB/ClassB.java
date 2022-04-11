@@ -6,7 +6,7 @@ public class ClassB extends ClassA{
 	void testAccess() {
 		var ref = new ClassA();
 		ref.pubMethod();
-		
+		  
 		//The method privMethod() from the type ClassA is not visible
 //		ref.privMethod();
 		
