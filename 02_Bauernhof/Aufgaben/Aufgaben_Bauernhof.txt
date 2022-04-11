@@ -1,0 +1,46 @@
+﻿Erweitern Sie den Bauernhofsimulator um folgende Klassen 
+
+Klasse Bauer:
+
+Attribute der Klasse Bauer:
+- name
+- gewicht
+- groesse
+- alter
+
+Klasse Schwein
+
+Attribute der Klasse Schwein
+- name
+- gewicht
+
+Klasse Kuh
+
+Attribute der Klasse Kuh
+- name
+- gewicht
+- milchmenge
+
+Klasse Karotte:
+
+Attribute der Klasse Karotte
+- sorte
+- ruebenlaenge
+
+
+Alle Attribute sollen private sein und entsprechende Getter/Setter Methoden 
+sollen bereitgestellt werden.
+
+Konstruktoren: ein default Konstruktor, also Parameterlos und ein voll parametrisierter.
+der Parameterlose soll den voll parametrisierten aufrufen.
+
+Der Bauer soll folgende Methoden bereitstellen:
+
+-	Eine Methode melken(), mit der eine bestimmte Kuh gemolken werden kann.
+	Die Milchmenge der Kuh soll durch das Melken auf 0 reduziert werden.
+	
+- 	Eine Methode schweinFuettern(), mit dem ein bestimmtes Schwein mit einer bestimmten Karotte
+	gefuettert werden kann. In der Methode soll die Methode fressen() des Schweins aufgerufen werden,
+	die das Gewicht des Schweins entprechend der Ruebenlaenge der Karotte, also der gegessenen Menge erhoeht. 
+	
+
