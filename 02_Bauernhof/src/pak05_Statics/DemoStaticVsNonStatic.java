@@ -1,4 +1,4 @@
-package pak03;
+package pak05_Statics;
 
 public class DemoStaticVsNonStatic {
 	public static String staticAttr = "static";

@@ -1,4 +1,4 @@
-package bauernhof.fauna;
+package pak01_bauernhof.fauna;
 
 public class Hund {
 	private String name;

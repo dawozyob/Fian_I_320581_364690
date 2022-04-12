@@ -5,7 +5,6 @@ Klasse Bauer:
 Attribute der Klasse Bauer:
 - name
 - gewicht
-- groesse
 - alter
 
 Klasse Schwein
@@ -13,12 +12,14 @@ Klasse Schwein
 Attribute der Klasse Schwein
 - name
 - gewicht
+- alter
 
 Klasse Kuh
 
 Attribute der Klasse Kuh
 - name
 - gewicht
+- alter
 - milchmenge
 
 Klasse Karotte:
@@ -40,7 +41,10 @@ Der Bauer soll folgende Methoden bereitstellen:
 	Die Milchmenge der Kuh soll durch das Melken auf 0 reduziert werden.
 	
 - 	Eine Methode schweinFuettern(), mit dem ein bestimmtes Schwein mit einer bestimmten Karotte
-	gefuettert werden kann. In der Methode soll die Methode fressen() des Schweins aufgerufen werden,
-	die das Gewicht des Schweins entprechend der Ruebenlaenge der Karotte, also der gegessenen Menge erhoeht. 
+	gefuettert werden kann. 
+	
+	In der Methode soll die Methode fressen() des Schweins aufgerufen werden,
+	die das Gewicht des Schweins entprechend der Ruebenlaenge der Karotte, 
+	also der gegessenen Menge erhoeht. 
 	
 

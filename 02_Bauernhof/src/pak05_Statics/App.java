@@ -1,4 +1,4 @@
-package pak03;
+package pak05_Statics;
 
 public class App {
 	static int count = 0;
