@@ -15,8 +15,7 @@ public interface I1 {
 	
 	private static void privateStaticMethod() {
 		
-	}
-	
+	}	
 }
 
 
