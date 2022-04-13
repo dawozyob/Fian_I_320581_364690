@@ -18,8 +18,11 @@ public class Kartoffel extends Gemuese {
 		super(sorte);
 		this.setKnollengroesse(knollengroesse);
 	}
+
 	@Override
-	public void wirdgegessen() {
-		System.out.println("Kartoffel wird gegessen");
+	public void wirdgefressen() {
+		System.out.println("Kartoffel wird gefressen");
+		
 	}
+
 }

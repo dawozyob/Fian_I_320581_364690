@@ -1,8 +1,8 @@
 package pak02_bauernhofVererbung.fauna;
 
-import pak02_bauernhofVererbung.flora.Gemuese;
+import pak02_bauernhofVererbung.interfaces.IFressbar;
 
-public class Saeugetier {
+public abstract class Saeugetier {
 	private String name;
 	private int alter;
 	private int gewicht;
@@ -45,11 +45,9 @@ public class Saeugetier {
 		System.out.println("Saeugetier bewegt sich");
 	}
 
-	public void fressen() {
-		System.out.println("Saeugetier frisst");
-	}
+	public abstract void fressen();
 
-	public void fressen(Gemuese g) {
-		g.wirdgegessen();
-	}
+	public abstract void fressen(IFressbar g);
+	
+	public abstract void sprich();
 }

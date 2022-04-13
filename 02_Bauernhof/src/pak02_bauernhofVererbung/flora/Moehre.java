@@ -20,9 +20,12 @@ public class Moehre extends Gemuese {
 		super(sorte);
 		this.setRuebenlaenge(ruebenlange);
 	}
-	
+
 	@Override
-	public void wirdgegessen() {
-		System.out.println("Moehre wird gegessen");
+	public void wirdgefressen() {
+		System.out.println("Moehre wird gefressen");
+		
 	}
+	
+
 }

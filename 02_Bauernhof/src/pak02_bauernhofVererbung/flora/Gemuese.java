@@ -1,6 +1,8 @@
 package pak02_bauernhofVererbung.flora;
 
-public class Gemuese {
+import pak02_bauernhofVererbung.interfaces.IFressbar;
+
+public abstract class Gemuese implements IFressbar {
 	private String sorte;
 
 	public String getSorte() {
@@ -18,8 +20,7 @@ public class Gemuese {
 	public Gemuese(String sorte) {
 		this.setSorte(sorte);
 	}
+
 	
-	public void wirdgegessen() {
-		System.out.println("Gemuese wird gegessen");
-	}
+
 }
