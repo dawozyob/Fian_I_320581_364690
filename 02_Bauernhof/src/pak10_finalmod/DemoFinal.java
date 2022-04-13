@@ -1,4 +1,4 @@
-package pak10.finalmod;
+package pak10_finalmod;
 
 public class DemoFinal {
 
