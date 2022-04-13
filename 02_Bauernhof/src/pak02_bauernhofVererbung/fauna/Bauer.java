@@ -1,8 +1,31 @@
 package pak02_bauernhofVererbung.fauna;
 
+import pak02_bauernhofVererbung.flora.Gemuese;
+
 public class Bauer extends Saeugetier{
 	
 	public void bewegen() {
 		System.out.println("Bauer laeuft ");
 	}
+	
+	
+//	public void fuettern(Schwein s) {
+//		s.fressen();
+//	}
+//	public void fuettern(Kuh k) {
+//		k.fressen();
+//	}
+	
+//	public void fuettern(Saeugetier s) {
+//		if(s instanceof Kuh) {
+//			((Kuh)s).fressen();			
+//		}else if(s instanceof Schwein) {
+//			((Schwein)s).fressen();
+//		}
+//	}
+	
+	public void fuettern(Saeugetier s, Gemuese g) {
+		s.fressen(g);
+	}
+	
 }

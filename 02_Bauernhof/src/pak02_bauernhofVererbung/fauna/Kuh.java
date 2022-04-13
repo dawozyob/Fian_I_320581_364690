@@ -11,5 +11,8 @@ public class Kuh extends Saeugetier{
 		this.milchmenge = milchmenge;
 	}
 	
+	public void fressen() {
+		System.out.println("Kuh frisst");
+	}
 	
 }

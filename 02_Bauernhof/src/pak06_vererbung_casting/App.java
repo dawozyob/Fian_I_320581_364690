@@ -24,12 +24,12 @@ public class App {
 		 * stehen.
 		 */
 		aIsC.goA();
-//				aIsC.goB();
-//				aIsC.goC();
+//		aIsC.goB();
+//		aIsC.goC();
 
 		bIsC.goA();
 		bIsC.goB();
-//				bIsC.goC();
+//		bIsC.goC();
 
 		cIsC.goA();
 		cIsC.goB();
@@ -64,6 +64,10 @@ public class App {
 		C c3 = (C) b3;
 	}
 
+	public static void go(A ref) {
+		
+	}
+	
 	public static void go(C ref) {
 
 	}
