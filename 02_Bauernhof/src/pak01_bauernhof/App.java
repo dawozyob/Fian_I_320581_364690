@@ -30,6 +30,9 @@ public class App {
 		
 		schweineStall[1].fressen(kar);
 		
+		System.out.println(bauer);
+		
+		
 		System.out.println("Programmende");
 	}
 	
