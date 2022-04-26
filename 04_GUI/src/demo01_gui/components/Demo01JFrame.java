@@ -1,5 +1,7 @@
 package demo01_gui.components;
 
+import java.awt.Color;
+
 import javax.swing.JFrame;
 
 public class Demo01JFrame {
@@ -10,12 +12,17 @@ public class Demo01JFrame {
 		
 		//Titel setzen
 		frame.setTitle("Demo01JFrame");
-		
-		frame.setDefaultCloseOperation(0);
+		//Das Programm soll beim Schliessen des Fensters beendet werden
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//Groesse festlegen
 		frame.setBounds(400, 300, 800, 600);
 		
+		//Alle Komponenten werden im ContentPane plaziert
+		frame.getContentPane().setBackground(Color.blue);
 		
+		//Das Frame sichtbar machen
+		//Sollte immer als letztes passieren,
+		//damit alles sauber gezeichnet wird.
 		frame.setVisible(true);
 	}
 }
