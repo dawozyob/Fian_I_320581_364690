@@ -31,8 +31,7 @@ public class Demo07JOptionPane {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				String text = JOptionPane.showInputDialog(panel, "Bitte einen Text eingeben", "Eine Frage", JOptionPane.QUESTION_MESSAGE);
-				JOptionPane.showMessageDialog(panel, "Danke fuers klicken", "Ein Titel", JOptionPane.INFORMATION_MESSAGE);
-				
+				JOptionPane.showMessageDialog(panel, "Danke fuers klicken", "Ein Titel", JOptionPane.INFORMATION_MESSAGE);			
 				if(text != null) {
 					System.out.println(text.length());
 				}
@@ -41,7 +40,38 @@ public class Demo07JOptionPane {
 			}
 		});
 		
+		JButton btn2 = new JButton("to Confirm");
+		btn2.addActionListener(new ActionListener() {			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				int input = JOptionPane.showConfirmDialog(panel, "Wirklich beenden?", "Ein Titel", JOptionPane.NO_OPTION);
+//				System.out.println(input);
+				if(input == 0) {
+					System.out.println("Ja gedrueckt");
+				}
+				if(input == 1) {
+					System.out.println("Nein gedrueckt");
+				}
+				if(input == 2) {
+					System.out.println("Abbrechen gedrueckt");
+				}
+				if(input == -1) {
+					System.out.println("Dialog mit x beendet");
+				}
+			}
+		});
+		JButton btn3 = new JButton("Error Message");
+		btn3.addActionListener(new ActionListener() {			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(panel, "Fehler !", "Error Message", JOptionPane.ERROR_MESSAGE);
+				
+			}
+		});
+		
 		panel.add(btn);
+		panel.add(btn2);
+		panel.add(btn3);
 		panel.add(label);
 		frame.setVisible(true);
 	}
