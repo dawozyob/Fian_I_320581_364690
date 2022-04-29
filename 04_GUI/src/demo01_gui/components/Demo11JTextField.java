@@ -63,12 +63,20 @@ public class Demo11JTextField {
 			}
 		});
 		
+		JButton btn2 = new JButton("Speichern");
+		btn2.addActionListener(new ActionListener() {		
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println(txtField.getText());				
+			}
+		});
 		
 		panel.add(txtField);
 		panel.add(txtField2);
 		panel.add(txtField3);
 		panel.add(pass);
 		panel.add(btn);
+		panel.add(btn2);
 		frame.setVisible(true);
 	}
 }
