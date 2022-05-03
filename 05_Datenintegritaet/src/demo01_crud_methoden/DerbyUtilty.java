@@ -13,7 +13,7 @@ public class DerbyUtilty {
 	 * and results are returned within the context of a connection.
 	 * 
 	 * Das Connection Objekt ist fuer die Verbindung zur Datenbank zustaendig
-	 */
+	 */ 
 	public static Connection getConnectionInMemoryDatabase() throws SQLException {
 		// Die Adresse der Datenbank
 		String url = "jdbc:derby:memory:myDerby;create=true";
