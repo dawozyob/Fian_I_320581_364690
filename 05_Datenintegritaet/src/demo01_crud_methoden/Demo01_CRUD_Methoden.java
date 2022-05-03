@@ -20,7 +20,8 @@ public class Demo01_CRUD_Methoden {
 		try {
 			Connection c = DerbyUtilty.getConnectionInMemoryDatabase();
 			DerbyUtilty.createTestTable(c);
-			
+			DerbyUtilty.fillTestTable(c);
+			DerbyUtilty.printTestTable(c);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
