@@ -1,4 +1,4 @@
-package demo01_gui.mvc;
+package demo01_gui.mvc.model;
 
 public class Model {
 	private int zahl;

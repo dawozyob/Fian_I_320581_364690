@@ -1,4 +1,4 @@
-package demo01_gui.mvc;
+package demo01_gui.mvc.view;
 
 import java.awt.BorderLayout;
 import java.awt.Font;

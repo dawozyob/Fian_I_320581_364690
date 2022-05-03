@@ -1,7 +1,10 @@
-package demo01_gui.mvc;
+package demo01_gui.mvc.controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import demo01_gui.mvc.model.Model;
+import demo01_gui.mvc.view.MainView;
 
 public class Controller implements ActionListener{
 	
