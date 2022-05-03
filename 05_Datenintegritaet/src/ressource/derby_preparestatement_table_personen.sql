@@ -1,0 +1,1 @@
+INSERT INTO personen (vorname, nachname, geburtsjahr) VALUES (?, ?, ?)
