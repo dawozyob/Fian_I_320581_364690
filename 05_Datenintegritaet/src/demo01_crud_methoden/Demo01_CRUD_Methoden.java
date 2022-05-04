@@ -15,7 +15,7 @@ import java.sql.SQLException;
  * auch die Akronyme RUDI oder CDUR verwendet.
  */
 
-public class Demo01_CRUD_Methoden {
+public class Demo01_CRUD_Methoden {  
 	public static void main(String[] args) {
 		try {
 			Connection c = DerbyUtilty.getConnectionInMemoryDatabase();

@@ -14,7 +14,7 @@ import java.sql.SQLException;
 public class SQLiteUtility {
 	private static Connection con = connect();
 	
-	private static Connection connect() {
+	private static Connection connect() {  
 		String absolute = "C:\\Unterricht\\Workspaces_Unterricht\\FIAN_I_320581_364690\\Fian_I_320581_364690\\05_Datenintegritaet\\DB\\Mitarbeiter.db";
 		String relativ = "./DB/Mitarbeiter.db";
 		String url = "jdbc:sqlite:" + relativ;
