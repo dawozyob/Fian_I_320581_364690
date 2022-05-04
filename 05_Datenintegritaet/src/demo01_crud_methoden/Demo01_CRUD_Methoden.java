@@ -19,9 +19,11 @@ public class Demo01_CRUD_Methoden {
 	public static void main(String[] args) {
 		try {
 			Connection c = DerbyUtilty.getConnectionInMemoryDatabase();
-			DerbyUtilty.createTestTable(c);
-			DerbyUtilty.fillTestTable(c);
-			DerbyUtilty.printTestTable(c);
+//			DerbyUtilty.createTestTable(c);
+//			DerbyUtilty.fillTestTable(c);
+//			DerbyUtilty.printTestTable(c);
+			
+			SQLiteUtility s = new SQLiteUtility();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
