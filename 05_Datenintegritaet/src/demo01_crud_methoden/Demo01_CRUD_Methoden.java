@@ -22,8 +22,8 @@ public class Demo01_CRUD_Methoden {
 //			DerbyUtilty.createTestTable(c);
 //			DerbyUtilty.fillTestTable(c);
 //			DerbyUtilty.printTestTable(c);
+			SQLiteUtility.transctionWithoutRollback();
 			
-			SQLiteUtility s = new SQLiteUtility();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

@@ -2,6 +2,7 @@ package demo01_crud_methoden;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 /*
  * Absoluter Pfad
@@ -26,8 +27,35 @@ public class SQLiteUtility {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} 
-		
-		
 		return con;
+	}
+	
+	public static void transctionWithoutRollback() {
+		String sql = "UPDATE mitarbeiter SET vorname = ? WHERE id = ?";
+		try {
+			PreparedStatement stm = con.prepareStatement(sql);
+			stm.setString(1, "Markus");
+			stm.setInt(2, 1);
+			int rowsAffected = stm.executeUpdate();
+			System.out.println(rowsAffected + " rows affected");
+			/*
+			 * id 10 existiert nicht in der DB, also klappt das Aendern des Datensatzes nicht.
+			 * Der Datensatz mit der id 1 wird geaendert, was nicht sein soll.
+			 */
+			stm.setString(1, "Vorname2");
+			stm.setInt(2, 10);
+			rowsAffected = stm.executeUpdate();
+			System.out.println(rowsAffected + " rows affected");
+			
+			stm.setString(1, "Vorname2");
+			stm.setInt(2, 2);
+			rowsAffected = stm.executeUpdate();
+			System.out.println(rowsAffected + " rows affected");
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
 	}
 }
