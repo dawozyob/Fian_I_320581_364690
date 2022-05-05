@@ -1,5 +1,6 @@
 package demo04_benutzereingaben_filtern;
 
+import java.awt.event.KeyAdapter;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -9,12 +10,34 @@ public class NutzereingabenFiltern {
 //		wertEinLesenMitFehler();
 //		wertEinlesenMitExceptionHandling();
 //		wertEinlesenMitStringFilterung();
-		wertEinlesenMitStringFilterung2();
+//		wertEinlesenMitStringFilterung2();
+		wertEinlesenMitRegEx();
+		KeyAdapter k;
+	}
+
+	private static void wertEinlesenMitRegEx() {
+		String regEx = "[0-9]+";
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Bitte eine Zahl eingeben");
+		String wert = sc.next();
+		boolean isNumeric = wert.matches(regEx);
+		if(isNumeric) {
+			System.out.println("Sie haben einen numerischen Wert eingegeben");
+		}else {
+			System.out.println("Bitte nur Zahlen eingeben");
+		}
 	}
 
 	private static void wertEinlesenMitStringFilterung2() {
-		
-		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Bitte eine Zahl eingeben");
+		String wert = sc.next();
+		boolean isNumeric = wert.chars().allMatch(i -> Character.isDigit(i));
+		if(isNumeric) {
+			System.out.println("Sie haben einen numerischen Wert eingegeben");
+		}else {
+			System.out.println("Bitte nur Zahlen eingeben");
+		}
 	}
 
 	private static void wertEinlesenMitStringFilterung() {
