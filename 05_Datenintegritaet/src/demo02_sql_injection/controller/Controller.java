@@ -1,6 +1,7 @@
 package demo02_sql_injection.controller;
 
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import demo02_sql_injection.model.Model;
 import demo02_sql_injection.view.MainFrame;
@@ -25,9 +26,9 @@ public class Controller {
 	public Controller() {
 		this.setMainFrame(new MainFrame());
 		this.setModel(new Model());
-		
 		this.getMainFrame().addActionListenerToInSecureButton(this::pressedInsecureButton);
 		this.getMainFrame().addActionListenerToSecureButton(this::pressedSecureButton);
+
 	}
 	
 	private void pressedInsecureButton(ActionEvent e) {
@@ -38,6 +39,7 @@ public class Controller {
 	private void pressedSecureButton(ActionEvent e) {
 		this.getModel().getCon().loginSecure(this.getMainFrame().getUserData());
 	}
+
 	
 	
 }
